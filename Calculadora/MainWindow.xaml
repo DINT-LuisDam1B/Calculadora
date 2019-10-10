@@ -1,11 +1,11 @@
-﻿<Window x:Class="Calculadora.MainWindow"
+﻿<Window x:Name="Calculadora" x:Class="Calculadora.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculadora"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculadora" Height="450" Width="800" Icon="CalculadoraIcono.ico">
     <Viewbox>
         <Grid>
             <Grid.RowDefinitions>
@@ -28,21 +28,16 @@
                 
             </Border>
 
-            
-
-
             <Button x:Name="Button_Uno" Grid.Row="1" Grid.Column="0" Tag="1" Click="PresionarBoton">1</Button>
-            <Button x:Name="Button_Dos" Grid.Row="1" Grid.Column="1" Tag="2">2</Button>
-            <Button x:Name="Button_Tres" Grid.Row="1" Grid.Column="2" Tag="3">3</Button>
-            <Button x:Name="Button_Cuatro" Grid.Row="2" Grid.Column="0" Tag="4">4</Button>
-            <Button x:Name="Button_Cinco" Grid.Row="2" Grid.Column="1" Tag="5">5</Button>
-            <Button x:Name="Button_Seis" Grid.Row="2" Grid.Column="3" Tag="6">6</Button>
-            <Button x:Name="Button_Siete" Grid.Row="3" Grid.Column="0" Tag="7">7</Button>
-            <Button x:Name="Button_Ocho" Grid.Row="3" Grid.Column="1" Tag="8">8</Button>
-            <Button x:Name="Button_Nueve" Grid.Row="3" Grid.Column="2" Tag="9">9</Button>
-            <Button x:Name="Button_Cero" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Tag="0">0</Button>
-
-
+            <Button x:Name="Button_Dos" Grid.Row="1" Grid.Column="1" Tag="2" Click="PresionarBoton">2</Button>
+            <Button x:Name="Button_Tres" Grid.Row="1" Grid.Column="2" Tag="3" Click="PresionarBoton">3</Button>
+            <Button x:Name="Button_Cuatro" Grid.Row="2" Grid.Column="0" Tag="4" Click="PresionarBoton">4</Button>
+            <Button x:Name="Button_Cinco" Grid.Row="2" Grid.Column="1" Tag="5" Click="PresionarBoton">5</Button>
+            <Button x:Name="Button_Seis" Grid.Row="2" Grid.Column="3" Tag="6" Click="PresionarBoton">6</Button>
+            <Button x:Name="Button_Siete" Grid.Row="3" Grid.Column="0" Tag="7" Click="PresionarBoton">7</Button>
+            <Button x:Name="Button_Ocho" Grid.Row="3" Grid.Column="1" Tag="8" Click="PresionarBoton">8</Button>
+            <Button x:Name="Button_Nueve" Grid.Row="3" Grid.Column="2" Tag="9" Click="PresionarBoton">9</Button>
+            <Button x:Name="Button_Cero" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Tag="0" Click="PresionarBoton">0</Button>
 
         </Grid>
     </Viewbox>

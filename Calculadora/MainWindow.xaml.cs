@@ -27,7 +27,7 @@ namespace Calculadora
 
         private void PresionarBoton(object sender, RoutedEventArgs e)
         {
-            textbox_pantalla.Text = textbox_pantalla + "";
+            textbox_pantalla.Text = textbox_pantalla.Text + ((Button)sender).Tag ;
         }
 
        
