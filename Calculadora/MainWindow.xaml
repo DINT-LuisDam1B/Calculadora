@@ -9,11 +9,11 @@
     
         <Grid x:Name="GridContenedor">
             <Grid.RowDefinitions>
-            <RowDefinition Height="2*"></RowDefinition>
-            <RowDefinition></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -28,10 +28,26 @@
                 </Viewbox>
             </Border>
         
-            <Button x:Name="Button_Uno" Margin="2" Grid.Row="1" Grid.Column="0" Tag="1" Click="PresionarBoton">1</Button>
-            <Button x:Name="Button_Dos" Margin="2" Grid.Row="1" Grid.Column="1" Tag="2" Click="PresionarBoton">2</Button>
-            <Button x:Name="Button_Tres" Margin="2" Grid.Row="1" Grid.Column="2" Tag="3" Click="PresionarBoton">3</Button>
-            <Button x:Name="Button_Cuatro" Margin="2" Grid.Row="2" Grid.Column="0" Tag="4" Click="PresionarBoton">4</Button>
+            <Button x:Name="Button_Uno" Margin="2" Grid.Row="1" Grid.Column="0" Tag="1" Click="PresionarBoton">
+            <Viewbox>
+                <TextBlock Text="1"/>
+            </Viewbox>
+            </Button>
+            <Button x:Name="Button_Dos" Margin="2" Grid.Row="1" Grid.Column="1" Tag="2" Click="PresionarBoton">
+            <Viewbox>
+                <TextBlock Text="2"/>
+            </Viewbox>
+            </Button>
+            <Button x:Name="Button_Tres" Margin="2" Grid.Row="1" Grid.Column="2" Tag="3" Click="PresionarBoton">
+                <Viewbox>
+                    <TextBlock Text="3"/>
+                </Viewbox>
+            </Button>
+            <Button x:Name="Button_Cuatro" Margin="2" Grid.Row="2" Grid.Column="0" Tag="4" Click="PresionarBoton">
+                <Viewbox>
+                    <TextBlock Text="1"/>
+                </Viewbox>
+            </Button>
             <Button x:Name="Button_Cinco" Margin="2" Grid.Row="2" Grid.Column="1" Tag="5" Click="PresionarBoton">5</Button>
             <Button x:Name="Button_Seis" Margin="2" Grid.Row="2" Grid.Column="3" Tag="6" Click="PresionarBoton">6</Button>
             <Button x:Name="Button_Siete" Margin="2" Grid.Row="3" Grid.Column="0" Tag="7" Click="PresionarBoton">7</Button>
